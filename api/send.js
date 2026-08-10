@@ -16,8 +16,10 @@ export default async function handler(req, res) {
     if (attachments && attachments.length > 0) {
       payload.attachments = attachments.map(a => ({
         filename: a.filename,
-        content: a.content, // base64 string
+        content: a.content,
       }));
+    } else {
+      payload.attachments = null;
     }
 
     const response = await fetch("https://api.resend.com/emails", {
