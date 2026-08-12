@@ -1,5 +1,5 @@
-**
- * Craghan Contact — API Function Tests
+/**
+ * Craghan Contact - API Function Tests
  * Tests for api/send.js (Resend proxy) and api/data.js (Supabase proxy)
  *
  * Run with: node tests/api.test.mjs
